@@ -1,0 +1,15 @@
+name = "Wiki Migrate"
+description = "Migrate data."
+package = Custom
+core = 7.x
+dependencies[] = taxonomy
+dependencies[] = image
+dependencies[] = comment
+dependencies[] = migrate
+dependencies[] = list
+dependencies[] = number
+dependencies[] = entityreference
+dependencies[] = path
+
+files[] = wiki_migrate.module
+files[] = article.inc
