@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * This module holds custom common functions.
+ */
+function wiki_common_preprocess_html(&$vars) {
+
+  $element = array(
+    '#tag' => 'meta', // The #tag is the html tag - <link />
+    '#attributes' => array(// Set up an array of attributes inside the tag
+      'name' => 'msvalidate.01',
+      'content' => 'CD556FD9720B0D6A617B1DF54833ECF7',
+    ),
+  );
+
+  drupal_add_html_head($element, 'bing_search_index');
+}
