@@ -14,5 +14,5 @@ function wiki_common_preprocess_html(&$vars) {
     ),
   );
 
-  drupal_add_html_head($element, 'bing_search_index');
+  //drupal_add_html_head($element, 'bing_search_index');
 }
