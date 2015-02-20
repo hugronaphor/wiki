@@ -32,13 +32,10 @@
         <?php endif; ?>
       </div> <!-- /.name-and-slogan -->
     <?php endif; ?>
-    <?php print render($page['header']); ?>
-      
-    <div class="fb-like" data-href="https://www.facebook.com/twerklist" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
   </header> <!-- /.page-header -->
 
   <?php if ($main_menu || $secondary_menu): ?>
-    <nav class="page-navigation" role="navigation">
+    <nav class="page-navigation clearfix" role="navigation">
       <?php print theme('links__system_main_menu', array(
         'links' => $main_menu,
         'attributes' => array(
@@ -54,6 +51,7 @@
           'heading' => t('Secondary menu'),
         ));
       ?><?php print render($page['navigation']); ?>
+      <?php print render($page['header']); ?>
     </nav> <!-- /.page-navigation -->
   <?php endif; ?>
 
