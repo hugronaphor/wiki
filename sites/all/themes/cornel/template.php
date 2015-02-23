@@ -13,7 +13,7 @@
  * @todo: suggest the hook.
  */
 function cornel_menu_link__main_menu($link) {
-dsm($link['element']['#title']);
+//dsm($link['element']['#title']);
   switch ($link['element']['#title']) {
     case 'Code Snippets':
 
