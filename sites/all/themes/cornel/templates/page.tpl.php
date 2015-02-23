@@ -51,7 +51,20 @@
           'heading' => t('Secondary menu'),
         ));
       ?><?php print render($page['navigation']); ?>
-      <?php print render($page['header']); ?>
+      <?php //print render($page['header']); ?>
+
+        <div class="social-buttons">
+          <ul>
+            <li rel="linked-in"><a href="http://www.linkedin.com/in/cornelandreev/"></a></li>
+            <li rel="fb"><a href="https://www.facebook.com/hugronaphor"></a></li>
+            <li rel="g-plus"><a href="https://plus.google.com/u/0/+CornelAndreev"></a></li>
+            <li rel="twitter"><a href="https://twitter.com/hugronaphor"></a></li>
+            <li rel="rss"><a href="/rss.xml"></a></li>
+            <!--<li rel="github"><a href="https://github.com/hugronaphor"></a></li>-->
+          </ul>
+        </div>
+      
+      
     </nav> <!-- /.page-navigation -->
   <?php endif; ?>
 

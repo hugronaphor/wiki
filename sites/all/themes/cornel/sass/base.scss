@@ -30,6 +30,7 @@ $bodyColor: #f7f7f2;
 $munuInactiveColor: #acacac;
 $teaserTitleBgColor: #0faea9;
 $globalTextColor: #2c2c2c;
+$linkHover: #cc4054;
 
 
 
@@ -45,11 +46,14 @@ body {
 a {color:#333;}      /* unvisited link */
 a:visited {color:rgba(51, 51, 51, 0.81);}  /* visited link */
 a:hover {
-  color:#326;
+  color:$linkHover;
   text-decoration: none;
 }
 a:active {color:#0000FF;}  /* selected link */
 
+p {
+  margin: 4px 0;
+}
 .page-wrapper {
   max-width: 1170px;
   width: 80%;
@@ -68,7 +72,7 @@ nav {
   #main-menu {  
     text-transform: uppercase;
     float:left;
-    margin: 0;
+    margin: 6px 0 0 0;
     li {
       float:left;
       padding:0;
@@ -77,7 +81,7 @@ nav {
         padding: 0px 10px;
         font-weight: bold;
         color: $munuInactiveColor;
-        font-size: 1.3em;
+        font-size: 1.43em;
 
         &:hover, &.active {
           color: #131313;
@@ -93,6 +97,60 @@ nav {
       }
     }
   }
+
+  .social-buttons {
+    float: right;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      list-style-image: none;
+
+      li {
+        display: inline;
+        a {
+          text-decoration: none;
+          margin: 4px;
+          /*padding: 5px 20px 5px 20px;*/
+          color: #85848a;
+          background: none;
+          width: 26px;
+          height: 33px;
+          display: inline-block;
+          /*float: left;*/
+
+          //-webkit-transition: background 0.2s ease-out;
+          //-moz-transition: background 0.2s ease-out;
+          //-o-transition: background 0.2s ease-out;
+          //transition: background 0.2s ease-out;
+          cursor: pointer;
+        }
+
+        &[rel="linked-in"] a {
+          background: url("../images/social/social_icons.png") 0 0;
+        }
+
+        &[rel="twitter"] a {
+          background: url("../images/social/social_icons.png") -42px 0;
+        }
+
+        &[rel="fb"] a {
+          background: url("../images/social/social_icons.png") -75px 0;
+        }
+
+        &[rel="rss"] a {
+          background: url("../images/social/social_icons.png") -155px 0;
+        }
+        &[rel="g-plus"] a {
+          background: url("../images/social/social_icons.png") -238px 0;
+        }
+        &[rel="github"] a {
+          background: url("../images/social/social_icons.png") 0px 0;
+        }
+      }
+    }
+  }
 }
 
 .basic-list {  
@@ -103,12 +161,12 @@ nav {
     .views-row {
       display: inline-block;
       box-sizing: border-box;
-      width: 49%;
+      width: 100%;
       background: #fff;
       vertical-align: top;
 
       article {
-        overflow:hidden;
+        //overflow:hidden;
         position:relative;
         .field-item {
           .content {
@@ -131,40 +189,79 @@ nav {
           padding: 5px 0;
           z-index: 99;
           width:100%;
+          border-bottom: 15px solid $bodyColor;
+          padding-right: 0;
+          padding-left: 0;
           h2 {
-
             margin:0;
             a {
               color:$bodyColor;
               font-size: 22px;
+              &:hover {
+                //color: #131313;
+              }
             }
-          }
-          &.on-top {
-            top: 0;
-          }
-          &.on-bottom {
-            bottom:0;
           }
         }
 
         .links {
+          float:right;
+          margin: 7px 0 0 0;
           &.inline {
+            li {
+              padding: 0 8px 0 0;
+            }
             .disqus_comments_num {
               display: none; // submit a patch for disqus on drupal org.
             }
             .node-readmore {
+
+
               a {
-                border: 1px solid $bodyColor;
+                border: 1px solid #c0bfbf;
                 padding: 5px 12px;
                 text-transform: uppercase;
+                &:hover {
+                  border-color: #918e8e;
+                  -webkit-transition:border-color 0.5s ease; -moz-transition:border-color 0.5s ease; -o-transition:border-color 0.5s ease; transition:border-color 0.5s ease;
+
+                }
               }
             }
           }
         }
         .field {
           padding: 8px;
+
+          &.field-name-field-tags {
+            float:left;
+
+
+            .field-items {
+              &::before{
+                content: ' ';
+                background: transparent url(../images/cornel_co_tags.png) no-repeat;
+                width: 25px;
+                height: 15px;
+                display: inline-block;
+                margin: 0 8px 0 0;
+              }
+
+              .field-item {
+                display: inline-block;
+                margin: 0 4px;
+                line-height: 22px;
+                font-size: 18px;
+                top: -2px;
+                position: relative;
+              }
+            }
+          }
+
+
           .geshifilter {
             text-align: left;
+            margin: 0;
           }
         }
       }
@@ -193,20 +290,20 @@ nav {
 /*Start pager*/
 .pager li>a, .pager li>span {
   display: inline-block;
-  padding: 1px 15px;
+  padding: 1px 8px 3px 8px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background: #fff;
 }
 
 .pager .pager-current {
-  color: #32b38c;
+  color: $linkHover;
 
 }
 
 .pager li>a:hover, .pager li>a:focus {
   text-decoration: none;
-  background-color: #32b38c;
+  background-color: $linkHover;
   color:#fff;
 }
 /*End pager*/

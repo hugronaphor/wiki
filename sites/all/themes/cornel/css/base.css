@@ -1203,7 +1203,7 @@ a:visited {
 
 /* visited link */
 a:hover {
-  color: #326;
+  color: #cc4054;
   text-decoration: none;
 }
 
@@ -1212,6 +1212,10 @@ a:active {
 }
 
 /* selected link */
+p {
+  margin: 4px 0;
+}
+
 .page-wrapper {
   max-width: 1170px;
   width: 80%;
@@ -1228,7 +1232,7 @@ nav {
 nav #main-menu {
   text-transform: uppercase;
   float: left;
-  margin: 0;
+  margin: 6px 0 0 0;
 }
 nav #main-menu li {
   float: left;
@@ -1239,13 +1243,55 @@ nav #main-menu li a {
   padding: 0px 10px;
   font-weight: bold;
   color: #acacac;
-  font-size: 1.3em;
+  font-size: 1.43em;
 }
 nav #main-menu li a:hover, nav #main-menu li a.active {
   color: #131313;
 }
 nav .region-header {
   float: right;
+}
+nav .social-buttons {
+  float: right;
+}
+nav .social-buttons ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+nav .social-buttons ul li {
+  display: inline;
+}
+nav .social-buttons ul li a {
+  text-decoration: none;
+  margin: 4px;
+  /*padding: 5px 20px 5px 20px;*/
+  color: #85848a;
+  background: none;
+  width: 26px;
+  height: 33px;
+  display: inline-block;
+  /*float: left;*/
+  cursor: pointer;
+}
+nav .social-buttons ul li[rel="linked-in"] a {
+  background: url("../images/social/social_icons.png") 0 0;
+}
+nav .social-buttons ul li[rel="twitter"] a {
+  background: url("../images/social/social_icons.png") -42px 0;
+}
+nav .social-buttons ul li[rel="fb"] a {
+  background: url("../images/social/social_icons.png") -75px 0;
+}
+nav .social-buttons ul li[rel="rss"] a {
+  background: url("../images/social/social_icons.png") -155px 0;
+}
+nav .social-buttons ul li[rel="g-plus"] a {
+  background: url("../images/social/social_icons.png") -238px 0;
+}
+nav .social-buttons ul li[rel="github"] a {
+  background: url("../images/social/social_icons.png") 0px 0;
 }
 
 .basic-list .view-content {
@@ -1255,12 +1301,11 @@ nav .region-header {
 .basic-list .view-content .views-row {
   display: inline-block;
   box-sizing: border-box;
-  width: 49%;
+  width: 100%;
   background: #fff;
   vertical-align: top;
 }
 .basic-list .view-content .views-row article {
-  overflow: hidden;
   position: relative;
 }
 .basic-list .view-content .views-row article .field-item .content a {
@@ -1278,6 +1323,9 @@ nav .region-header {
   padding: 5px 0;
   z-index: 99;
   width: 100%;
+  border-bottom: 15px solid #f7f7f2;
+  padding-right: 0;
+  padding-left: 0;
 }
 .basic-list .view-content .views-row article header h2 {
   margin: 0;
@@ -1286,25 +1334,53 @@ nav .region-header {
   color: #f7f7f2;
   font-size: 22px;
 }
-.basic-list .view-content .views-row article header.on-top {
-  top: 0;
+.basic-list .view-content .views-row article .links {
+  float: right;
+  margin: 7px 0 0 0;
 }
-.basic-list .view-content .views-row article header.on-bottom {
-  bottom: 0;
+.basic-list .view-content .views-row article .links.inline li {
+  padding: 0 8px 0 0;
 }
 .basic-list .view-content .views-row article .links.inline .disqus_comments_num {
   display: none;
 }
 .basic-list .view-content .views-row article .links.inline .node-readmore a {
-  border: 1px solid #f7f7f2;
+  border: 1px solid #c0bfbf;
   padding: 5px 12px;
   text-transform: uppercase;
+}
+.basic-list .view-content .views-row article .links.inline .node-readmore a:hover {
+  border-color: #918e8e;
+  -webkit-transition: border-color 0.5s ease;
+  -moz-transition: border-color 0.5s ease;
+  -o-transition: border-color 0.5s ease;
+  transition: border-color 0.5s ease;
 }
 .basic-list .view-content .views-row article .field {
   padding: 8px;
 }
+.basic-list .view-content .views-row article .field.field-name-field-tags {
+  float: left;
+}
+.basic-list .view-content .views-row article .field.field-name-field-tags .field-items::before {
+  content: ' ';
+  background: transparent url(../images/cornel_co_tags.png) no-repeat;
+  width: 25px;
+  height: 15px;
+  display: inline-block;
+  margin: 0 8px 0 0;
+}
+.basic-list .view-content .views-row article .field.field-name-field-tags .field-items .field-item {
+  display: inline-block;
+  margin: 0 4px;
+  line-height: 22px;
+  font-size: 18px;
+  top: -2px;
+  position: relative;
+}
 .basic-list .view-content .views-row article .field .geshifilter {
   text-align: left;
+  margin: 0;
 }
 
 .page-node .main-wrapper {
@@ -1322,19 +1398,19 @@ nav .region-header {
 /*Start pager*/
 .pager li > a, .pager li > span {
   display: inline-block;
-  padding: 1px 15px;
+  padding: 1px 8px 3px 8px;
   border: 1px solid #ddd;
   border-radius: 5px;
   background: #fff;
 }
 
 .pager .pager-current {
-  color: #32b38c;
+  color: #cc4054;
 }
 
 .pager li > a:hover, .pager li > a:focus {
   text-decoration: none;
-  background-color: #32b38c;
+  background-color: #cc4054;
   color: #fff;
 }
 
