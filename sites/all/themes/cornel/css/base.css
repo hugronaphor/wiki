@@ -1359,10 +1359,26 @@ nav .social-buttons ul li[rel="github"] a {
 .basic-list .view-content .views-row article .field {
   padding: 8px;
 }
-.basic-list .view-content .views-row article .field.field-name-field-tags {
+.basic-list .view-content .views-row article .field .geshifilter {
+  text-align: left;
+  margin: 0;
+}
+
+.node-type-article .main-wrapper {
+  background: #fff;
+  padding: 10px;
+}
+.node-type-article .main-wrapper article .sharerich-wrapper {
+  clear: both;
+}
+.node-type-article .main-wrapper article .field {
+  margin-bottom: 10px;
+}
+
+.field.field-name-field-tags {
   float: left;
 }
-.basic-list .view-content .views-row article .field.field-name-field-tags .field-items::before {
+.field.field-name-field-tags .field-items::before {
   content: ' ';
   background: transparent url(../images/cornel_co_tags.png) no-repeat;
   width: 25px;
@@ -1370,7 +1386,7 @@ nav .social-buttons ul li[rel="github"] a {
   display: inline-block;
   margin: 0 8px 0 0;
 }
-.basic-list .view-content .views-row article .field.field-name-field-tags .field-items .field-item {
+.field.field-name-field-tags .field-items .field-item {
   display: inline-block;
   margin: 0 2px;
   line-height: 22px;
@@ -1378,25 +1394,17 @@ nav .social-buttons ul li[rel="github"] a {
   top: -2px;
   position: relative;
 }
-.basic-list .view-content .views-row article .field.field-name-field-tags .field-items .field-item a::after {
+.field.field-name-field-tags .field-items .field-item a::after {
   content: "/";
   margin-left: .2em;
   font-weight: bold;
 }
-.basic-list .view-content .views-row article .field.field-name-field-tags .field-items .field-item:last-child a::after {
+.field.field-name-field-tags .field-items .field-item:last-child a::after {
   content: "";
 }
-.basic-list .view-content .views-row article .field .geshifilter {
+.field .geshifilter {
   text-align: left;
   margin: 0;
-}
-
-.page-node .main-wrapper {
-  background: #fff;
-  padding: 10px;
-}
-.page-node .main-wrapper .page-title {
-  text-align: center;
 }
 
 .page-contact .main-wrapper .page-title {
