@@ -1304,6 +1304,7 @@ nav .social-buttons ul li[rel="github"] a {
   width: 100%;
   background: #fff;
   vertical-align: top;
+  margin-bottom: 15px;
 }
 .basic-list .view-content .views-row article {
   position: relative;
@@ -1323,7 +1324,6 @@ nav .social-buttons ul li[rel="github"] a {
   padding: 5px 0;
   z-index: 99;
   width: 100%;
-  border-bottom: 15px solid #f7f7f2;
   padding-right: 0;
   padding-left: 0;
 }
@@ -1372,11 +1372,19 @@ nav .social-buttons ul li[rel="github"] a {
 }
 .basic-list .view-content .views-row article .field.field-name-field-tags .field-items .field-item {
   display: inline-block;
-  margin: 0 4px;
+  margin: 0 2px;
   line-height: 22px;
   font-size: 18px;
   top: -2px;
   position: relative;
+}
+.basic-list .view-content .views-row article .field.field-name-field-tags .field-items .field-item a::after {
+  content: "/";
+  margin-left: .2em;
+  font-weight: bold;
+}
+.basic-list .view-content .views-row article .field.field-name-field-tags .field-items .field-item:last-child a::after {
+  content: "";
 }
 .basic-list .view-content .views-row article .field .geshifilter {
   text-align: left;
@@ -1483,4 +1491,55 @@ input[name=search_block_form] {
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
   /* portrait phones */
+}
+/*Temporary styles*/
+/* Contacts */
+.contact-form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact-form .form-item {
+  margin: 18px 0 25px;
+}
+
+.page-contacts .pane-contact form label {
+  font-size: 14px;
+  font-family: 'source_sans_probold';
+  margin-bottom: 4px;
+  font-weight: normal;
+}
+
+input.form-text,
+textarea,
+.contact-form input,
+.contact-form textarea,
+.contact-form .form-text {
+  border: none;
+  border-left: 1px solid #EFEFEF;
+  border-right: 1px solid #EFEFEF;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -ms-box-shadow: none;
+  box-shadow: none;
+  padding: 12px;
+  font-size: 14px;
+  color: #4D5357;
+  margin: 5px 0;
+  display: block;
+}
+
+.contact-form .form-type-checkbox {
+  display: none;
+}
+
+.contact-form form input {
+  line-height: 1em;
+  width: 370px;
+  padding-top: 9px;
+  padding-bottom: 9px;
 }

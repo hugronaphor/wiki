@@ -55,12 +55,12 @@
 
         <div class="social-buttons">
           <ul>
-            <li rel="linked-in"><a href="http://www.linkedin.com/in/cornelandreev/"></a></li>
-            <li rel="fb"><a href="https://www.facebook.com/hugronaphor"></a></li>
-            <li rel="g-plus"><a href="https://plus.google.com/u/0/+CornelAndreev"></a></li>
-            <li rel="twitter"><a href="https://twitter.com/hugronaphor"></a></li>
-            <li rel="rss"><a href="/rss.xml"></a></li>
-            <!--<li rel="github"><a href="https://github.com/hugronaphor"></a></li>-->
+            <li rel="linked-in"><a target="_blank" title="LinkedIn" href="http://www.linkedin.com/in/cornelandreev/"></a></li>
+            <li rel="fb"><a target="_blank"  title="FaceBook" href="https://www.facebook.com/hugronaphor"></a></li>
+            <li rel="g-plus"><a target="_blank" title="Google Plus" href="https://plus.google.com/u/0/+CornelAndreev"></a></li>
+            <li rel="twitter"><a target="_blank" title="Twitter" href="https://twitter.com/hugronaphor"></a></li>
+            <li rel="rss"><a target="_blank" title="RSS" href="/rss.xml"></a></li>
+            <!--<li rel="github"><a target="_blank" title="GitHub" href="https://github.com/hugronaphor"></a></li>-->
           </ul>
         </div>
       
