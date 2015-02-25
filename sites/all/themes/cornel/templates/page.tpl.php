@@ -70,11 +70,10 @@
 
   <?php if ($breadcrumb): ?>
     <div class="breadcrumb-wrapper"><?php //print $breadcrumb; ?></div>
-  <?php endif; ?>
-
-  <?php print $messages; ?>
+  <?php endif; ?>  
 
   <div class="main-wrapper" role="main">
+    <?php print $messages; ?>
     <?php if (isset($is_panel_page) && $is_panel_page): ?>
       <section class="page-content panel-page-content">
     <?php else: ?>
