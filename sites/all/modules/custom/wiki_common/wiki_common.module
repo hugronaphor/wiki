@@ -5,7 +5,7 @@
  * This module holds custom common functions.
  */
 function wiki_common_preprocess_html(&$vars) {
-
+  
   $element = array(
     '#tag' => 'meta', // The #tag is the html tag - <link />
     '#attributes' => array(// Set up an array of attributes inside the tag
