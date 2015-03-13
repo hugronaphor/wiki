@@ -32,24 +32,51 @@ $teaserTitleBgColor: #0faea9;
 $globalTextColor: #2c2c2c;
 $linkHover: #cc4054;
 
-
-
-.messages {
-  //display:none;
-}
+/*-------------------------*/
 
 body {
   background: $bodyColor;
   font-family: 'PT Sans Narrow', sans-serif;
   color : $globalTextColor;
 }
-a {color:#333;}      /* unvisited link */
-a:visited {color:rgba(51, 51, 51, 0.81);}  /* visited link */
+
+a {
+  color:#333;
+  outline: medium none;
+  text-decoration: none;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-timing-function: ease-in;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -webkit-transition-duration: 0.1s;
+  -moz-transition-duration: 0.1s;
+  -o-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+a:visited {
+  color:rgba(51, 51, 51, 0.81);
+}
 a:hover {
   color:$linkHover;
   text-decoration: none;
 }
-a:active {color:#0000FF;}  /* selected link */
+a:active {
+  color:#0000FF;
+}
+
+.field-type-text-with-summary {
+  a {
+    color: $linkHover;
+    &:hover {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+}
 
 p {
   margin: 4px 0;
@@ -90,12 +117,17 @@ nav {
         font-weight: bold;
         color: $munuInactiveColor;
         font-size: 1.43em;
-
         &:hover, &.active {
           color: #131313;
         }
       }
+      &.first {
+        a {
+          padding: 0 10px 0 0px;
+        }
+      }
     }
+
   }
   .region-header {
     float:right;
@@ -252,6 +284,18 @@ nav {
 }
 
 .node-type-article {
+
+  nav {
+    background-color: transparent;
+    #main-menu {  
+      li.menu-1604 { // Code Snippets
+        a {
+          color: #131313;
+        }
+      }
+    }
+  }
+
   .main-wrapper {
     background: #fff;
     padding: 10px;
@@ -269,6 +313,16 @@ nav {
     }
   }
 
+}
+
+.node-type-page {
+  .main-wrapper {
+    background: #fff;
+    padding: 10px;
+    .page-title {
+      display: none;
+    }
+  }
 }
 
 .field {
@@ -296,18 +350,18 @@ nav {
         position: relative;
 
         a {
-          &::after {
-            content: "/";
-            margin-left: .2em;
-            font-weight: bold;
-          }
+
+        }
+
+        &::after {
+          content: "/";
+          margin-left: .2em;
+          font-weight: bold;
         }
 
         &:last-child {
-          a {
-            &::after {
-              content: "";
-            }
+          &::after {
+            content: "";
           }
         }
       }
