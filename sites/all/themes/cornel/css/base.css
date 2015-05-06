@@ -1330,7 +1330,6 @@ nav .social-buttons ul li[rel="github"] a {
   width: 100%;
   background: #fff;
   vertical-align: top;
-  margin-bottom: 15px;
 }
 .basic-list .view-content .views-row article {
   position: relative;
@@ -1346,7 +1345,7 @@ nav .social-buttons ul li[rel="github"] a {
 }
 .basic-list .view-content .views-row article header {
   position: relative;
-  background: #0faea9;
+  background: #f7f7f2;
   padding: 5px 0;
   z-index: 99;
   width: 100%;
@@ -1357,8 +1356,14 @@ nav .social-buttons ul li[rel="github"] a {
   margin: 0;
 }
 .basic-list .view-content .views-row article header h2 a {
-  color: #f7f7f2;
-  font-size: 22px;
+  color: #131313;
+  font-size: 20px;
+  padding: 0 12px;
+}
+.basic-list .view-content .views-row article header h2 a:hover {
+  color: #0faea9;
+  border-right: 2px solid #cc4054;
+  border-left: 2px solid #cc4054;
 }
 .basic-list .view-content .views-row article .links {
   float: right;
@@ -1618,4 +1623,10 @@ input[name=search_block_form] {
 }
 .form-textarea-wrapper textarea.error {
   border-bottom: 2px solid red;
+}
+
+.tabs ul.tabs li {
+  display: inline-block;
+  border: 1px solid #333;
+  padding: 1px 7px;
 }
