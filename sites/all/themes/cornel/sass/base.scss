@@ -204,7 +204,7 @@ nav {
       width: 100%;
       background: #fff;
       vertical-align: top;
-      margin-bottom:15px;
+      //margin-bottom:5px;
 
       article {
         //overflow:hidden;
@@ -225,8 +225,8 @@ nav {
 
         header {
           position: relative;
-          background: $teaserTitleBgColor;
-          //background: rgba(50, 179, 140, 0.6);
+          //background: $teaserTitleBgColor;
+         background: $bodyColor;
           padding: 5px 0;
           z-index: 99;
           width:100%;
@@ -235,10 +235,13 @@ nav {
           h2 {
             margin:0;
             a {
-              color:$bodyColor;
-              font-size: 22px;
+              color: #131313;
+              font-size: 20px;
+              padding: 0 12px;
               &:hover {
-                //color: #131313;
+                color: $teaserTitleBgColor;
+                border-right: 2px solid $linkHover;
+                border-left: 2px solid $linkHover;
               }
             }
           }
@@ -255,8 +258,6 @@ nav {
               display: none; // submit a patch for disqus on drupal org.
             }
             .node-readmore {
-
-
               a {
                 border: 1px solid #c0bfbf;
                 padding: 5px 12px;
@@ -288,7 +289,7 @@ nav {
   nav {
     background-color: transparent;
     #main-menu {  
-      li.menu-1604 { // Code Snippets
+      li.menu-1604 {
         a {
           color: #131313;
         }
@@ -567,6 +568,19 @@ $contactMaxWidth: 500px;
     padding: 10px 0;
     &.error {
       border-bottom:2px solid red;
+    }
+  }
+}
+
+// Admin styles
+.tabs {
+  ul {
+    &.tabs {
+      li {
+        display: inline-block;
+        border: 1px solid #333;
+        padding: 1px 7px;
+      }
     }
   }
 }
