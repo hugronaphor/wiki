@@ -36,12 +36,12 @@
 
   <?php if ($main_menu || $secondary_menu): ?>
     <nav class="page-navigation clearfix" role="navigation">
-      <?php print theme('links__system_main_menu', array(
-        'links' => $main_menu,
-        'attributes' => array(
-          'id' => 'main-menu',
-          'class' => array('links', 'inline', 'clearfix')),
-        ));
+      <?php //print theme('links__system_main_menu', array(
+//        'links' => $main_menu,
+//        'attributes' => array(
+//          'id' => 'main-menu',
+//          'class' => array('links', 'inline', 'clearfix')),
+//        ));
       ?>
       <?php print theme('links__system_secondary_menu', array(
         'links' => $secondary_menu,
@@ -53,18 +53,21 @@
       ?><?php print render($page['navigation']); ?>
       <?php //print render($page['header']); ?>
 
-      <div class="person-block">
-        <!--<p class="my-name">Cornel Andreev</p>-->
+      <div id="person-block">
+        
+        <div class="my-name"><a href="about">Cornel Andreev</a></div>
+        <div class="my-logo"><a href="/"><img src="/sites/all/themes/cornel/images/cornel_ico.png"></a></div>
         <div class="social-buttons">
           <ul>
             <li rel="linked-in"><a target="_blank" title="LinkedIn" href="http://www.linkedin.com/in/cornelandreev/"></a></li>
-            <!--<li rel="fb"><a target="_blank"  title="FaceBook" href="https://www.facebook.com/hugronaphor"></a></li>-->
-            <!--<li rel="g-plus"><a target="_blank" title="Google Plus" href="https://plus.google.com/u/0/+CornelAndreev"></a></li>-->
+            <li rel="fb"><a target="_blank"  title="FaceBook" href="https://www.facebook.com/hugronaphor"></a></li>
+            <li rel="g-plus"><a target="_blank" title="Google Plus" href="https://plus.google.com/u/0/+CornelAndreev"></a></li>
             <li rel="twitter"><a target="_blank" title="Twitter" href="https://twitter.com/hugronaphor"></a></li>
             <li rel="rss"><a target="_blank" title="RSS" href="/rss.xml"></a></li>
             <!--<li rel="github"><a target="_blank" title="GitHub" href="https://github.com/hugronaphor"></a></li>-->
           </ul>
         </div>
+        
         </div>
       
       

@@ -1277,19 +1277,48 @@ nav #main-menu li.first a {
 nav .region-header {
   float: right;
 }
-nav .social-buttons {
-  float: right;
+nav #person-block {
+  /*float: right;*/
+  text-align: center;
+  margin-left: -9px;
+  margin-bottom: 20px;
 }
-nav .social-buttons ul {
+nav #person-block .my-logo {
+  display: inline-block;
+  width: 35px;
+  top: 7px;
+  position: relative;
+}
+nav #person-block .my-logo img {
+  max-width: 100%;
+}
+nav #person-block .my-name {
+  display: inline-block;
+  padding: 0px 10px;
+  font-weight: bold;
+  color: #000;
+  font-size: 1.63em;
+  text-transform: uppercase;
+}
+nav #person-block .my-name a:hover {
+  color: #000;
+}
+nav #person-block .social-buttons {
+  display: inline-block;
+  position: relative;
+  top: 11px;
+  left: 6px;
+}
+nav #person-block .social-buttons ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
   list-style-image: none;
 }
-nav .social-buttons ul li {
+nav #person-block .social-buttons ul li {
   display: inline;
 }
-nav .social-buttons ul li a {
+nav #person-block .social-buttons ul li a {
   text-decoration: none;
   margin: 4px;
   /*padding: 5px 20px 5px 20px;*/
@@ -1301,22 +1330,22 @@ nav .social-buttons ul li a {
   /*float: left;*/
   cursor: pointer;
 }
-nav .social-buttons ul li[rel="linked-in"] a {
+nav #person-block .social-buttons ul li[rel="linked-in"] a {
   background: url("../images/social/social_icons.png") 0 0;
 }
-nav .social-buttons ul li[rel="twitter"] a {
+nav #person-block .social-buttons ul li[rel="twitter"] a {
   background: url("../images/social/social_icons.png") -42px 0;
 }
-nav .social-buttons ul li[rel="fb"] a {
+nav #person-block .social-buttons ul li[rel="fb"] a {
   background: url("../images/social/social_icons.png") -75px 0;
 }
-nav .social-buttons ul li[rel="rss"] a {
+nav #person-block .social-buttons ul li[rel="rss"] a {
   background: url("../images/social/social_icons.png") -155px 0;
 }
-nav .social-buttons ul li[rel="g-plus"] a {
+nav #person-block .social-buttons ul li[rel="g-plus"] a {
   background: url("../images/social/social_icons.png") -238px 0;
 }
-nav .social-buttons ul li[rel="github"] a {
+nav #person-block .social-buttons ul li[rel="github"] a {
   background: url("../images/social/social_icons.png") 0px 0;
 }
 
