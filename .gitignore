@@ -6,3 +6,15 @@ sites/*/files
 sites/*/private
 
 sites/default/settings.php.save
+
+
+sites/all/themes/cornel/.sass-cache/*/base.scssc
+sites/all/themes/cornel/.sass-cache/*/*
+
+sites/all/themes/cornel/.sass-cache/**
+sites/all/themes/cornel/.sass-cache**
+**/.sass-cache
+**/.sass-cache/*
+**.sass-cache**
+.sass-cache
+.sass-cache/*
