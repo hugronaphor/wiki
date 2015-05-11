@@ -55,7 +55,7 @@
 
       <div id="person-block">
         
-        <div class="my-name"><a href="about">Cornel Andreev</a></div>
+        <div class="my-name"><a href="/about">Cornel Andreev</a></div>
         <div class="my-logo"><a href="/"><img src="/sites/all/themes/cornel/images/main_logo.png"></a></div>
         <div class="social-buttons">
           <ul>
