@@ -1251,6 +1251,7 @@ a {
 
 nav {
   background-color: transparent;
+  border-bottom: 2px solid #0a855d;
 }
 nav #main-menu {
   text-transform: uppercase;
@@ -1281,7 +1282,7 @@ nav #person-block {
   /*float: right;*/
   text-align: center;
   margin-left: -9px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 nav #person-block .my-logo {
   display: inline-block;
@@ -1294,7 +1295,7 @@ nav #person-block .my-logo img {
 }
 nav #person-block .my-name {
   display: inline-block;
-  padding: 0px 10px;
+  padding: 0px 8px;
   font-weight: bold;
   color: #000;
   font-size: 1.63em;
@@ -1320,21 +1321,19 @@ nav #person-block .social-buttons ul li {
 }
 nav #person-block .social-buttons ul li a {
   text-decoration: none;
-  margin: 4px;
-  /*padding: 5px 20px 5px 20px;*/
+  margin: 4px 0;
   color: #85848a;
   background: none;
-  width: 26px;
+  width: 32px;
   height: 33px;
   display: inline-block;
-  /*float: left;*/
   cursor: pointer;
 }
 nav #person-block .social-buttons ul li[rel="linked-in"] a {
   background: url("../images/social/social_icons.png") 0 0;
 }
 nav #person-block .social-buttons ul li[rel="twitter"] a {
-  background: url("../images/social/social_icons.png") -42px 0;
+  background: url("../images/social/social_icons.png") -38px 0;
 }
 nav #person-block .social-buttons ul li[rel="fb"] a {
   background: url("../images/social/social_icons.png") -75px 0;
@@ -1346,7 +1345,23 @@ nav #person-block .social-buttons ul li[rel="g-plus"] a {
   background: url("../images/social/social_icons.png") -238px 0;
 }
 nav #person-block .social-buttons ul li[rel="github"] a {
-  background: url("../images/social/social_icons.png") 0px 0;
+  background: url("../images/social/social_icons.png") -357px 0px;
+  top: -3px;
+  position: relative;
+}
+nav #person-block .social-buttons ul li[rel="drupal"] a {
+  background: url("../images/social/social_icons.png") -316px 0px;
+  top: -3px;
+  position: relative;
+}
+nav #person-block .social-buttons ul li[rel="stackoverflow"] a {
+  background: url("../images/social/social_icons.png") -402px 0px;
+  top: -6px;
+  position: relative;
+}
+
+.main-wrapper {
+  margin-top: 15px;
 }
 
 .basic-list .view-content {
