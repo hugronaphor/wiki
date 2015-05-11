@@ -56,7 +56,7 @@
       <div id="person-block">
         
         <div class="my-name"><a href="about">Cornel Andreev</a></div>
-        <div class="my-logo"><a href="/"><img src="/sites/all/themes/cornel/images/cornel_ico.png"></a></div>
+        <div class="my-logo"><a href="/"><img src="/sites/all/themes/cornel/images/main_logo.png"></a></div>
         <div class="social-buttons">
           <ul>
             <li rel="linked-in"><a target="_blank" title="LinkedIn" href="http://www.linkedin.com/in/cornelandreev/"></a></li>

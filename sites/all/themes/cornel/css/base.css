@@ -1252,6 +1252,7 @@ a {
 nav {
   background-color: transparent;
   border-bottom: 2px solid #0a855d;
+  padding-bottom: 10px;
 }
 nav #main-menu {
   text-transform: uppercase;
@@ -1281,14 +1282,28 @@ nav .region-header {
 nav #person-block {
   /*float: right;*/
   text-align: center;
-  margin-left: -9px;
+  //margin-left: -9px;
   margin-bottom: 10px;
 }
 nav #person-block .my-logo {
   display: inline-block;
-  width: 35px;
-  top: 7px;
+  width: 46px;
+  top: 10px;
   position: relative;
+  /*         -webkit-transition: all ease 0.1s;
+          -moz-transition: all ease 0.1s;
+          -o-transition: all ease 0.1s;
+          -ms-transition: all ease 0.1s;
+          transition: all ease 0.1s;*/
+}
+nav #person-block .my-logo:hover {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  top: 9px;
+  right: -2px;
 }
 nav #person-block .my-logo img {
   max-width: 100%;
@@ -1400,6 +1415,7 @@ nav #person-block .social-buttons ul li[rel="stackoverflow"] a {
   margin: 0;
 }
 .basic-list .view-content .views-row article header h2 a {
+  box-sizing: border-box;
   color: #131313;
   font-size: 20px;
   padding: 0 12px;
@@ -1496,7 +1512,7 @@ nav #person-block .social-buttons ul li[rel="stackoverflow"] a {
   margin: 0;
 }
 
-.page-contact .main-wrapper .page-title {
+.page-contact .main-wrapper .page-title, .page-taxonomy .main-wrapper .page-title {
   text-align: center;
 }
 
