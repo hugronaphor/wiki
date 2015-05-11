@@ -60,11 +60,13 @@
         <div class="social-buttons">
           <ul>
             <li rel="linked-in"><a target="_blank" title="LinkedIn" href="http://www.linkedin.com/in/cornelandreev/"></a></li>
-            <li rel="fb"><a target="_blank"  title="FaceBook" href="https://www.facebook.com/hugronaphor"></a></li>
-            <li rel="g-plus"><a target="_blank" title="Google Plus" href="https://plus.google.com/u/0/+CornelAndreev"></a></li>
+<!--            <li rel="fb"><a target="_blank"  title="FaceBook" href="https://www.facebook.com/hugronaphor"></a></li>
+            <li rel="g-plus"><a target="_blank" title="Google Plus" href="https://plus.google.com/u/0/+CornelAndreev"></a></li>-->
             <li rel="twitter"><a target="_blank" title="Twitter" href="https://twitter.com/hugronaphor"></a></li>
+            <li rel="drupal"><a target="_blank" title="Drupal" href="https://www.drupal.org/u/hugronaphor"></a></li>
+            <li rel="stackoverflow"><a target="_blank" title="StackOverflow" href="http://stackoverflow.com/users/1600028/cornel-andreev"></a></li>
+            <li rel="github"><a target="_blank" title="GitHub" href="https://github.com/hugronaphor"></a></li>
             <li rel="rss"><a target="_blank" title="RSS" href="/rss.xml"></a></li>
-            <!--<li rel="github"><a target="_blank" title="GitHub" href="https://github.com/hugronaphor"></a></li>-->
           </ul>
         </div>
         
