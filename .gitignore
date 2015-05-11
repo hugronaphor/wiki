@@ -7,7 +7,6 @@ sites/*/private
 
 sites/default/settings.php.save
 
-
 sites/all/themes/cornel/.sass-cache/*/base.scssc
 sites/all/themes/cornel/.sass-cache/*/*
 

@@ -1510,7 +1510,7 @@ nav #person-block .social-buttons ul li[rel="stackoverflow"] a {
   margin: 0;
 }
 
-.page-contact .main-wrapper .page-title {
+.page-contact .main-wrapper .page-title, .page-taxonomy .main-wrapper .page-title {
   text-align: center;
 }
 
