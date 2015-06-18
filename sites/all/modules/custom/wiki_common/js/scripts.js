@@ -1,28 +1,13 @@
 (function($) {
 
-  Drupal.behaviors.aboutPager = {
+  Drupal.behaviors.aboutRaphaelPage = {
     attach: function(context, settings) {
 
-      // Set views pager links as node titles.
-      var dSettings = Drupal.settings;
-      if (dSettings.aboutPager != undefined) {
-        var titles = (dSettings.aboutPager != undefined) ? dSettings.aboutPager.titles : '';
 
-        if (titles != '') {
-          $('ul.pager li.pager-item, ul.pager li.pager-current').each(function(index) {
 
-            var isAelement = $(this).find('a').length;
-            if (isAelement) {
-              $(this).find('a').text(titles[index]);
-            }
-            else {
-              $(this).text(titles[index]);
-            }
+        
 
-          });
 
-        }
-      }
     }
 
   };

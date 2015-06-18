@@ -5,7 +5,9 @@
  * This module holds custom common functions.
  */
 function wiki_common_preprocess_html(&$vars) {
-  
+
+  static $raphael_loaded;
+
   $element = array(
     '#tag' => 'meta', // The #tag is the html tag - <link />
     '#attributes' => array(// Set up an array of attributes inside the tag
@@ -15,4 +17,17 @@ function wiki_common_preprocess_html(&$vars) {
   );
 
   drupal_add_html_head($element, 'bing_search_index');
+
+  ###########
+
+  if (!$raphael_loaded && url(current_path()) == '/about') {
+    $file_name = 'raphael-min.js';
+    drupal_add_js(drupal_get_path('module', 'wiki_common') . '/js/' . $file_name, array(
+      'scope' => 'header',
+      'group' => JS_LIBRARY,
+      'defer' => FALSE,
+    ));
+
+    $raphael_loaded = TRUE;
+  }
 }
