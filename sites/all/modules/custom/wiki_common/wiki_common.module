@@ -4,6 +4,7 @@
  * @file
  * This module holds custom common functions.
  */
+/*
 function wiki_common_preprocess_html(&$vars) {
 
   static $raphael_loaded;
@@ -31,3 +32,5 @@ function wiki_common_preprocess_html(&$vars) {
     $raphael_loaded = TRUE;
   }
 }
+ * 
+ */
