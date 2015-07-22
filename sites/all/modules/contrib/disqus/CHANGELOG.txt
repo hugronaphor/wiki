@@ -2,6 +2,10 @@ CHANGELOG for Disqus for Drupal 7
 
 Disqus 7.x-1.12
 =================================
+- #2521996 by lalit774: Fix Php warning non-object in disqus_sso_disqus_settings() line 966
+
+Disqus 7.x-1.12
+=================================
 - #2508209 by Eric_A: Add Feeds support
 - #2501743 by PJnes: Default Disqus status is always TRUE
 
