@@ -1282,7 +1282,6 @@ nav .region-header {
 nav #person-block {
   /*float: right;*/
   text-align: center;
-  //margin-left: -9px;
   margin-bottom: 10px;
 }
 nav #person-block .my-logo {
@@ -1689,4 +1688,39 @@ input[name=search_block_form] {
   display: inline-block;
   border: 1px solid #333;
   padding: 1px 7px;
+}
+
+.inflow.drupal-maintenance {
+  z-index: 900;
+  width: 200px;
+  height: 0px;
+  float: left;
+  position: relative;
+  text-align: center;
+  margin-left: -200px;
+  font-size: 13px;
+}
+@media only screen and (max-width: 665px) {
+  .inflow.drupal-maintenance {
+    display: none;
+  }
+}
+.inflow.drupal-maintenance .positioner {
+  position: absolute;
+  right: 0;
+}
+.inflow.drupal-maintenance .positioner .fixed {
+  background: #edeeed;
+  width: 250px;
+  border: 2px solid #cc4054;
+  position: fixed;
+  top: 1px;
+}
+.inflow.drupal-maintenance .positioner .fixed h3 {
+  margin-bottom: 0px;
+  line-height: 19px;
+  margin-top: 2px;
+}
+.inflow.drupal-maintenance .positioner .fixed a {
+  color: #0faea9;
 }

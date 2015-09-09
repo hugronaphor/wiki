@@ -651,3 +651,37 @@ $contactMaxWidth: 500px;
     }
   }
 }
+
+
+.inflow.drupal-maintenance {
+  @media only screen and (max-width: 665px) {
+    display: none;
+  }
+  z-index: 900;
+  width: 200px;
+  height: 0px;
+  float: left;
+  position: relative;
+  text-align: center;
+  margin-left: -200px;
+  font-size: 13px;
+  .positioner {
+    position: absolute;
+    right: 0;
+    .fixed {
+      background: #edeeed;
+      width: 250px;
+      border: 2px solid #cc4054;
+      position: fixed;
+      top: 1px;
+      h3 {
+        margin-bottom: 0px;
+        line-height: 19px;
+        margin-top: 2px;
+      }
+      a {
+        color: #0faea9;
+      }
+    }
+  }
+}
